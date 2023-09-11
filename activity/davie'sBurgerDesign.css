@@ -15,10 +15,8 @@ body {
   
   nav {
     text-align: center;
-    border-image-width: 180px;
-    
+  
   }
-
   
   nav img {
     display: block;
@@ -43,7 +41,7 @@ body {
   .content {
     width: 100%;
     height: 500px;
-    margin: 10px 10px;
+    margin: 0 auto;
     overflow: auto;
   }
   
@@ -66,15 +64,13 @@ body {
     width: 68%;
     padding: 20px;
     margin: 0 auto;
-    
   }
   
   /* Content Body */
   
   .content .body {
     width: 90%;
-    margin: 0 auto;
-    
+    margin: auto;
   }
   
   .body p {
@@ -95,9 +91,7 @@ body {
     width: 200px;
     padding: 20px;
     margin: 40px auto;
-    border:1px;
-    border-color: blue;
-    border-style: solid;
+    border: 1px solid blue;
   }
   
   .button:hover {
@@ -110,7 +104,7 @@ body {
   
   ul.nutrition {
     padding: 20px;
-    
+
   }
   
   ul.nutrition li {
@@ -118,7 +112,7 @@ body {
     background-color: #05A8AA;
     list-style: none;
     width: 200px;
-    padding: 10px 20px;
+    padding: 20px 20px;
     margin-bottom: 3px;
   }
   
