@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Track</title>
+    <style>
+        .vertical-tabs {
+            list-style-type: none;
+            padding: 0
+        }
+        .vertical-tabs li {
+            margin-bottom: 45px; 
+        }
+        .rectangular-tab {
+            list-style-type: none;
+            padding: 0
+        }
+        
+    </style>
+</head>
+<body>
+    <div id = "title">
+        <p>TRANSACTION</p>
+    </div>
+    <div class = "container">
+        <table border = "3">
+            <thead>
+                <tr>
+                    <th>
+                        <div class="vertical-tabs">
+                            <li><button class="tab-button" onclick="showTab('section1')">View Transaction</button></li>
+                            <li><button class="tab-button" onclick="showTab('section2')">Add Income</button></li>
+                            <li><button class="tab-button" onclick="showTab('section3')">Add Expenses</button></li>
+                            <li><button class="tab-button" onclick="showTab('section4')">Remaining Balance</button></li>
+                            <li><button class="tab-button" onclick="showTab('section5')">Back</button></li>
+                        </div>
+                    </th>
+                    <th>
+                        <div class = "data">
+                            <div class = "filter">
+                                <h1>Filter by...</h1>
+                                <select id="filterBy">
+                                    <option value="View Income">View Income</option>
+                                    <option value="View Expenses">View Expenses</option>
+                                </select>
+                            </div>
+                            <div class="rectangular-tab">
+                                    <li><button>As of today...</button></li>
+                                    <li><button>As of this week...</button></li>
+                                    <li><button>As of this month...</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+        </body>
+        </html>
