@@ -7,7 +7,8 @@ body, html {
     background-position: center;
     background-size: cover;
     background-image: url("/vecteezy_dark-interior-with-circle-neon-light-3d-vector-showcase-for_8079348.jpg");
-    max-width: max-content;
+    background-repeat: no-repeat;
+    height: 100vh;
   }
   
   .menu {
