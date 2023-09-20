@@ -3,7 +3,7 @@ body, html {
     font-family: "Inconsolata", sans-serif;
   }
   
-  .bgimg {
+  .bg {
     background-position: center;
     background-size: cover;
     background-image: url("/city.png");
