@@ -1,28 +1,70 @@
-body {
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+  }
+  
+  .bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("./city.png");
+    min-height: 75%;
+  }
+  
+  .menu {
+    display: none;
+  }
+  *{
     font-family: "Integral CF";
+    padding: 0;
+    margin: 0;
+  }
+  .head{
+    background-color: black;
+  }
+
+  ul{
+    list-style: none;
+  }
+  ul li{
+    display: inline-block;
+    position: relative;
+  }
+  ul li a{
+    display: block;
+    padding: 20px 25px;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(255, 255, 255);
+  }
+
+  ul li ul.dropdown li{
+    display: block;
+
+  }
+  ul li ul.dropdown{
+     width: 100%;
+     position:absolute;
+     z-index: 999;
+     display: none;
+     background: rgb(53, 53, 53);
+     border-color: black;
+  }
+  ul li a :hover{
+    background: black;
+  }
+  ul li:hover ul.dropdown{
+    display: block;
+  }
+  
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
 }
-td{
-  text-align: center;
-}
-.top{
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOWQBLs1pE3YBRLkx_R4YOP44b3rOS7Peq3Q&usqp=CAU");
-  background-position: center;
-  background-size: cover;
-  height: 100px;
-}
-.class{
-  height: 739px;
-}
-.space{
-  height: 200px;
-}
-table {
-  text-align: center;
-  margin: 20px auto;
-  padding: 10px;
-}
-td{
-  padding: 10px;
-}
+  
