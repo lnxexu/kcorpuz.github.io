@@ -1,0 +1,131 @@
+*{
+    font-family: "Integral CF";
+    padding: 0;
+    margin: 0;
+}
+
+.buttons:hover{background-color:orange;}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    right: 81px;
+    position: absolute;
+    margin-bottom: 45px; 
+}
+.tab-button1{
+    top: 215px;
+    right: 81;
+    display: flex;
+    padding: 35px 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #FFF;
+    background: #000;
+    color: #FFF;
+    text-align: center;
+    font-family: Integral CF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    
+}
+.tab-button2{
+    top: 400px;
+    right: 81;
+    display: flex;
+    padding: 35px 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #FFF;
+    background: #000;
+    color: #FFF;
+    text-align: center;
+    font-family: Integral CF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    
+}
+.tab-button3{
+    display: flex;
+    padding: 35px 70px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #FFF;
+    background: #000;
+    color: #FFF;
+    text-align: center;
+    font-family: Integral CF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    top: 586px;
+    right: 81;
+}
+.bg{
+    display: flex;
+    width: 1050px;
+    height: 618px;
+    padding: 74px 81px 74px 1000px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 86px;
+    border: 1px solid #000;
+    background: #000;
+    top: 141px;
+    bottom: 141px;
+}
+.box{
+    width: 865px;
+    height: 532px;
+    border: 1px solid #000;
+    background: url(pexels-photo-by-karolina-grabowska.png), lightgray 50% / cover no-repeat;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 184px;
+    left: 52px;
+}
+#bal{
+    color: #FFF;
+    text-align: center;
+    font-family: Integral CF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: absolute;
+    left: 73px;
+    top: 210px;
+}
+#bal2{
+    position: absolute;
+    left: 95px;
+    top: 372px;
+    color: #FFF;
+    text-align: center;
+    font-family: Integral CF;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+#title{
+    color: #000;
+    text-align: center;
+    font-family: Integral CF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 35px;
+    top: 35;
+    left: 614px;  
+}
+
