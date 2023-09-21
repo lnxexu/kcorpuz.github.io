@@ -4,24 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cash Track</title>
-    <style>
-        .buttons * {
-            text-align: right;
-        }
-    </style>
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    <div id = "title">
-        <p>BALANCE</p>
-    </div>
-    <div class = "balance">
-        <p>Your Current Balance: </p>
-        <p>$ 1,000,000</p>
-    </div>
-    <div class = "buttons">
-        <button class="tab-button" onclick="showTab('section1')">ADD BALANCE</button>
-        <button class="tab-button" onclick="showTab('section2')">BANK TRANSFER</button>
-        <button class="tab-button" onclick="showTab('section3')">BACK</button>
+    <div id = "title">BALANCE</div>
+    <div class = "bg">
+        <div class = "box">
+            <h3 id="bal">YOUR CURRENT BALANCE:</h3>
+            <h1 id="bal2">$1,000,000.00</h1>
+        </div>
+        <div class = "buttons">
+            <button class="tab-button1" onclick="showTab('section1')">ADD BALANCE</button>
+            <button class="tab-button2" onclick="showTab('section2')">BANK TRANSFER</button>
+            <button class="tab-button3" onclick="showTab('section3')">BACK</button>
+        </div>
     </div>
 </body>
 </html>
