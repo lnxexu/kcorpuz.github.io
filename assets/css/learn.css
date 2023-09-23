@@ -1,0 +1,46 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.image-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container:hover {
+    transform: scale(1.05);
+    border-color: #e74c3c;
+}
