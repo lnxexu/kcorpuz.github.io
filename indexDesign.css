@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
-    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
 }
 body{
     background-color:#080808;
@@ -11,22 +14,42 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image:url("/3.jpg");
+    background-image: url("3.jpg");
     background-size: cover;
     background-position: center;
+
 }
 .container{
     padding: 10px 10%;
-
 }
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: fixed;
+    width: 80%;
+}
+nav ul{
+    list-style: none;
+    background: rgba(0,0,0,0);
+    overflow: hidden;
+    color: #ffffff;
+    padding: 0;
+    text-align: center;
+    margin:0;
+    transition: 1s;
+}
+nav.black ul{
+    background-color: rgb(68, 68, 68);
 }
 .logo{
     width: 104px;
+    float: left;
+    margin: 16px 36px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 30px;
 
 }
 nav ul li{
@@ -67,9 +90,15 @@ nav ul li a:hover::after{
     color: coral;
 }
 
+
+
 #about{
     padding: 80px 0;
     color: #ffffff;
+}
+#webdev{
+    background-color: rgb(175, 174, 174);
+    padding: 10px 10%;
 }
 .row{
     display: flex;
@@ -94,12 +123,58 @@ nav ul li a:hover::after{
 .about-col-2 p a:hover{
     color: chocolate;
 }
-.about-col-2 p a:hover::after{
-    color: yellow;
-}
 .subtitle{
     font-size: 60px;
     font-weight: 600;
     color: #ffffff;
 }
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-titles h1{
+    font-size: 30px;
+    font-weight: 1000;
+    color: black;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #ffffff;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+.tab-contents.active-tab ul li a{
+    font-size: 25px;
+}
+
 
