@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="indexDesign.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id = "header">
         <div class="container">
-            <nav>
-                <img src="" class="logo">
+            <nav class = "navbar">
+                <div class="logo">KAZE</div>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Web Development</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#webdev">Web Development</a></li>
                 </ul>
             </nav>
             <div class="header-text">
@@ -27,7 +27,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="/5.jpg" >
+                    <img src="5.jpg" >
                 </div>
                 <div class="about-col-2">
                     <h1 class="subtitle">About Me</h1>
@@ -40,5 +40,56 @@
             </div>
         </div>
     </div>
+    <div id="webdev">
+        <div class="tab-titles">
+            <h1 class = "tab-links active-link" onclick = "opentab('html')">Learn HTML Activities</h1>
+            <h1 class = "tab-links" onclick = "opentab('css')">Learn CSS Activities</h1>
+            <h1 class = "tab-links" onclick = "opentab('tracker')">Financial Tracker</h1>
+        </div>
+        <div class="tab-contents active-tab" id="html">
+            <ul>
+                <li><a href="#">Learnyouhtml</a><br>Done</li>
+                <li><a href="./activity/fashion.html">Fashion Blog</a><br>Done</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id = "css">
+            <ul>
+                <li><a href="#">CodeAcademy CSS</a><br>Done</li>
+                <li><a href="./activity/wineFestivalSched.html">Wine Festival Schedule</a><br>Done</li>
+                <li><a href="./activity/davie'sBurger.html">Davie's Burger</a><br>Done</li>
+            </ul>
+        </div>
+        <div class="tab-contents" id="tracker">
+            <ul>
+                <li><a href="./activity/balance.html">Financial Tracker</a><br>In progress</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+   
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(window).scroll(function(){
+            if($(window).scrollTop()){
+                $("navbar").addClass("black");
+            }
+            else{
+                $("navbar").removeClass("black");
+            }});
+            </script>
 </body>
 </html>
