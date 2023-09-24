@@ -9,13 +9,16 @@ body {
 
 .container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8); 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
     border: 2px solid #3498db;
     border-radius: 10px;
+    top: 25%;
+    left: 27%;
+    position: absolute;
 }
 
 h1 {
@@ -28,6 +31,7 @@ h1 {
 p {
     font-size: 16px;
     line-height: 1.5;
+    text-indent: 20px;
 }
 
 .image-section {
